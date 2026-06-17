@@ -10,6 +10,7 @@ backend:
   name: github
   repo: mtc75/cv-marti-casals
   branch: main
+  base_url: https://sveltia-cms-auth.martic360.workers.dev
 
 # Permite probar el editor en local con el proxy de Sveltia/Decap
 local_backend: true
