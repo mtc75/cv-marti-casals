@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "category": "university",
+      "tag": {
+        "en": "University Degree",
+        "ca": "Grau Universitari",
+        "es": "Grado Universitario"
+      },
+      "degree": {
+        "en": "Licensed in Forest Engineering and Nature Conservation",
+        "ca": "Graduat en Enginyeria Forestal i Conservació de la Natura",
+        "es": "Graduado en Ingeniería Forestal y Conservación de la Naturaleza"
+      },
+      "date": {
+        "en": "June 2026 – Present",
+        "ca": "Juny de 2026 – Actualitat",
+        "es": "Junio del 2026 – Actualidad"
+      },
+      "schools": [
+        {
+          "en": "ETSEAFIV, University of Lleida (25198)",
+          "ca": "ETSEAFIV, Universitat de Lleida (25198)",
+          "es": "ETSEAFIV, Universidad de Lleida (25198)"
+        }
+      ]
+    },
+    {
+      "category": "compulsory",
+      "tag": {
+        "en": "Compulsory Primary Education",
+        "ca": "Educació Primària Obligatòria",
+        "es": "Educación Primaria Obligatoria"
+      },
+      "degree": {
+        "en": "Primary Education",
+        "ca": "Educació Primària",
+        "es": "Educación Primaria"
+      },
+      "date": {
+        "en": "September 2014 – June 2020",
+        "ca": "Setembre de 2014 – Juny de 2020",
+        "es": "Septiembre del 2014 – Junio del 2020"
+      },
+      "schools": [
+        {
+          "en": "EP1: Institut Escola Tres Fonts de Les Corts, Barcelona (08028)",
+          "ca": "EP1: Institut Escola Tres Fonts de Les Corts, Barcelona (08028)",
+          "es": "EP1: Institut Escola Tres Fonts de Les Corts, Barcelona (08028)"
+        },
+        {
+          "en": "EP2‑EP6: Escola Salvador Sanromà, Llinars del Vallès (08450)",
+          "ca": "EP2‑EP6: Escola Salvador Sanromà, Llinars del Vallès (08450)",
+          "es": "EP2‑EP6: Escola Salvador Sanromà, Llinars del Vallès (08450)"
+        }
+      ]
+    },
+    {
+      "category": "compulsory",
+      "tag": {
+        "en": "Compulsory Secondary Education",
+        "ca": "Educació Secundària Obligatòria",
+        "es": "Educación Secundaria Obligatoria"
+      },
+      "degree": {
+        "en": "Graduated in Compulsory Secondary Education",
+        "ca": "Graduat en Educació Secundària Obligatòria",
+        "es": "Graduado en Educación Secundaria Obligatoria"
+      },
+      "date": {
+        "en": "September 2020 – June 2024",
+        "ca": "Setembre de 2020 – Juny de 2024",
+        "es": "Septiembre del 2020 – Junio del 2024"
+      },
+      "schools": [
+        {
+          "en": "Institut Giola, Llinars del Vallès (08450)",
+          "ca": "Institut Giola, Llinars del Vallès (08450)",
+          "es": "Institut Giola, Llinars del Vallès (08450)"
+        }
+      ]
+    },
+    {
+      "category": "postcompulsory",
+      "tag": {
+        "en": "Regulated Post-Compulsory Secondary Education",
+        "ca": "Educació Secundària Postobligatòria",
+        "es": "Educación Secundaria Postobligatoria"
+      },
+      "degree": {
+        "en": "Graduated in Baccalaureate | Science & Technology",
+        "ca": "Graduat en Batxillerat | Ciències i Tecnologia",
+        "es": "Graduado en Bachillerato | Ciencias y Tecnología"
+      },
+      "date": {
+        "en": "September 2024 – June 2026",
+        "ca": "Setembre de 2024 – Juny de 2026",
+        "es": "Septiembre del 2024 – Junio del 2026"
+      },
+      "schools": [
+        {
+          "en": "Institut Giola, Llinars del Vallès (08450)",
+          "ca": "Institut Giola, Llinars del Vallès (08450)",
+          "es": "Institut Giola, Llinars del Vallès (08450)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "title": {
+        "en": "Court Volleyball Referee LVL I",
+        "ca": "Àrbitre de voleibol en pista, NI",
+        "es": "Árbitro de voleibol en pista, NI"
+      },
+      "company": {
+        "en": "Catalan Volleyball Federation",
+        "ca": "Federació Catalana de Voleibol",
+        "es": "Federació Catalana de Voleibol"
+      },
+      "date": {
+        "en": "Sep 2024 – Present",
+        "ca": "Set 2024 – Actualitat",
+        "es": "Sep 2024 – Actualidad"
+      },
+      "bullets": [
+        {
+          "en": "Enforced game regulations consistently across diverse match settings, reducing disputes by 30% and maintaining an optimal flow of gameplay for players and spectators alike.",
+          "ca": "Vaig fer complir les normes del joc de manera consistent en diversos entorns de partit, reduint les disputes en un 30% i mantenint un flux de joc òptim tant per als jugadors com per als espectadors.",
+          "es": "Hice cumplir las normas del juego de manera consistente en diversos entornos de partido, reduciendo las disputas en un 30% y manteniendo un flujo de juego óptimo tanto para los jugadores como para los espectadores."
+        },
+        {
+          "en": "Managed over 50 volleyball matches annually, ensuring strict adherence to rules and fair play, which contributed to a 98% officiating accuracy rate.",
+          "ca": "Vaig gestionar més de 50 partits de voleibol anualment, assegurant el compliment estricte de les normes i el joc net, la qual cosa va contribuir a una taxa de precisió arbitral del 98%.",
+          "es": "Gestioné más de 50 partidos de voleibol anualmente, asegurando el cumplimiento estricto de las normas y el juego limpio, lo que contribuyó a una tasa de precisión arbitral del 98%."
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "LVL1 Beach Volleyball Referee",
+        "ca": "Àrbitre de vòlei platja LVL1",
+        "es": "Árbitro de vóley playa LVL1"
+      },
+      "company": {
+        "en": "Federació Catalana de Voleibol, RFEVB Catalonia",
+        "ca": "Federació Catalana de Voleibol, RFEVB Catalunya",
+        "es": "Federació Catalana de Voleibol, RFEVB Cataluña"
+      },
+      "date": {
+        "en": "Jun 2024 – Present",
+        "ca": "Juny 2024 – Actualitat",
+        "es": "Jun 2024 – Actualidad"
+      },
+      "bullets": [
+        {
+          "en": "Managed over 90 beach volleyball matches across national leagues and regional finals, ensuring compliance with official rules and maintaining high standards of fairness for players and spectators alike.",
+          "ca": "Vaig gestionar més de 90 partits de vòlei platja en lligues nacionals i finals regionals, assegurant el compliment de les normes oficials i mantenint alts estàndards d'equitat per a jugadors i espectadors.",
+          "es": "Gestioné más de 90 partidos de vóley playa en ligas nacionales y finales regionales, asegurando el cumplimiento de las normas oficiales y manteniendo altos estándares de equidad para jugadores y espectadores."
+        },
+        {
+          "en": "Coordinated with event organizers to streamline match scheduling and officiating logistics, resulting in a reduction in delays and improved overall tournament flow.",
+          "ca": "Em vaig coordinar amb els organitzadors per optimitzar la programació dels partits i la logística arbitral, resultant en una reducció dels retards i una millora del flux general del torneig.",
+          "es": "Me coordiné con los organizadores para optimizar la programación de los partidos y la logística arbitral, lo que resultó en una reducción de los retrasos y una mejora del flujo general del torneo."
+        },
+        {
+          "en": "Enforced safety protocols and adjudicated disputes swiftly during high-stakes competitions, contributing to zero reported incidents in 95% of events attended.",
+          "ca": "Vaig fer complir els protocols de seguretat i vaig resoldre disputes ràpidament durant competicions d'alt risc, contribuint a zero incidents reportats en el 95% dels esdeveniments.",
+          "es": "Hice cumplir los protocolos de seguridad y resolví disputas rápidamente durante competiciones de alto riesgo, contribuyendo a cero incidentes reportados en el 95% de los eventos."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "icon": "fa-car",
+      "title": {
+        "en": "Driving Licence B",
+        "ca": "Carnet de Conduir B",
+        "es": "Permiso de Conducir B"
+      },
+      "detail": {
+        "en": "Expiry: 31‑12‑2028",
+        "ca": "Caducitat: 31‑12‑2028",
+        "es": "Caducidad: 31‑12‑2028"
+      },
+      "extra": {
+        "en": "Full driving licence for motor vehicles. Valid across the EU.",
+        "ca": "Permís de conduir complet per a vehicles de motor. Vàlid a tota la UE.",
+        "es": "Permiso de conducir completo para vehículos de motor. Válido en toda la UE."
+      },
+      "color": "linear-gradient(135deg, #fbdbeb, #fbdbea)",
+      "textColor": "#1e293b"
+    },
+    {
+      "showIcon": false,
+      "detail": {
+        "en": "Card number: 0000ABC",
+        "ca": "Carnet Número: 0000ABC",
+        "es": "Carné Número: 0000ABC"
+      },
+      "extra": {
+        "en": "Authorised to direct activities for children and youth.",
+        "ca": "Habilita per dirigir activitats infantils i juvenils.",
+        "es": "Habilita para dirigir actividades infantiles y juveniles."
+      },
+      "color": "linear-gradient(to right, #fcc338 40%, #fbdf8b 40%)",
+      "textColor": "#1e293b",
+      "advanced": {
+        "customTitleHTML": "<span data-lang=\"ca\" style=\"display:inline-block; font-size:11px; line-height:1.2; text-align:left;\">Carnet de<br><span style=\"font-size:19px; font-weight:700;\">DIRECTOR/A</span><br>d'activitats d'educació<br>en el lleure<br>infantil i juvenil</span><span data-lang=\"en\" style=\"display:inline-block; font-size:11px; line-height:1.2; text-align:left;\">Leisure Activities of Education<br><span style=\"font-size:19px; font-weight:700;\">DIRECTOR</span><br>for children<br>and youth</span><span data-lang=\"es\" style=\"display:inline-block; font-size:11px; line-height:1.2; text-align:left;\">Carnet de<br><span style=\"font-size:19px; font-weight:700;\">DIRECTOR/A</span><br>de actividades de educación<br>en el ocio<br>infantil y juvenil</span>",
+        "decorativeHTML": "<span style=\"position: absolute; top: 44%; right: 18px; transform: translateY(-50%); font-size: 230px; font-weight: 675; color: #fcc338; opacity: 0.75; line-height: 1; pointer-events: none;\">D</span>",
+        "textAlign": "left",
+        "padding": "20px 20px 12px 12px"
+      }
+    },
+    {
+      "icon": "fa-hiking",
+      "title": {
+        "en": "Mountain Leader Licence",
+        "ca": "Llicència de Guia de Muntanya",
+        "es": "Licencia de Guía de Montaña"
+      },
+      "detail": {
+        "en": "Expiry: 01‑04‑2029",
+        "ca": "Caducitat: 01‑04‑2029",
+        "es": "Caducidad: 01‑04‑2029"
+      },
+      "extra": {
+        "en": "Qualified to lead groups in mountain environments.",
+        "ca": "Qualificat per guiar grups en entorns de muntanya.",
+        "es": "Cualificado para guiar grupos en entornos de montaña."
+      },
+      "color": "linear-gradient(to right, #206c3d 40%, #8eb78c 40%)"
+    }
+  ]
+}

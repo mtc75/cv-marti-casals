@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "name": {
+        "en": "Basic Life Support (BLS)",
+        "ca": "Suport Vital Bàsic (BLS)",
+        "es": "Soporte Vital Básico (BLS)"
+      },
+      "org": {
+        "en": "European Resuscitation Council",
+        "ca": "Consell Europeu de Ressuscitació",
+        "es": "Consejo Europeo de Resucitación"
+      },
+      "dates": [
+        {
+          "label": {
+            "en": "First certification:",
+            "ca": "Primera certificació:",
+            "es": "Primera certificación:"
+          },
+          "value": "12/08/2025"
+        },
+        {
+          "label": {
+            "en": "Last renewal:",
+            "ca": "Darrera renovació:",
+            "es": "Última renovación:"
+          },
+          "value": "09/05/2026"
+        },
+        {
+          "label": {
+            "en": "Expiration:",
+            "ca": "Caduca:",
+            "es": "Caduca:"
+          },
+          "value": "09/05/2029"
+        }
+      ],
+      "badge": {
+        "status": "healthy",
+        "text": {
+          "en": "Healthy – No action needed.",
+          "ca": "Vigent – No cal cap acció.",
+          "es": "Vigente – No requiere ninguna acción."
+        }
+      }
+    },
+    {
+      "name": {
+        "en": "Stop the Bleed® course",
+        "ca": "Stop the Bleed® course",
+        "es": "Stop the Bleed® course"
+      },
+      "org": {
+        "en": "Committee on Trauma · August 2025",
+        "ca": "Committee on Trauma · August 2025",
+        "es": "Committee on Trauma · August 2025"
+      },
+      "note": {
+        "linkLabel": "www.stopthebleed.org",
+        "linkUrl": "https://www.stopthebleed.org/"
+      }
+    }
+  ]
+}

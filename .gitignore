@@ -1,0 +1,6 @@
+# Documento fuente y versión original monolítica (no se publican)
+*.docx
+EDITAR BE.html
+
+# Sistema
+.DS_Store

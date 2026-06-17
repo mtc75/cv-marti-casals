@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "name": {
+        "en": "Certificate in Advanced English – C1",
+        "ca": "Certificate in Advanced English – C1",
+        "es": "Certificate in Advanced English – C1"
+      },
+      "org": "Cambridge University Press & Assessment",
+      "grade": { "en": "Grade C", "ca": "Grade C", "es": "Grade C" },
+      "logos": "cambridge",
+      "scores": [
+        { "label": "Overall Score", "value": "186", "total": true },
+        { "label": "Reading", "value": "180" },
+        { "label": "Use of English", "value": "177" },
+        { "label": "Writing", "value": "175" },
+        { "label": "Listening", "value": "207" },
+        { "label": "Speaking", "value": "191" }
+      ],
+      "exam": { "date": "30 NOV 2025", "place": "BARCELONA", "centre": "ES439 6044" },
+      "verification": "D4109822",
+      "accreditation": "500/2598/3"
+    },
+    {
+      "name": {
+        "en": "First Certificate in English – B2",
+        "ca": "First Certificate in English – B2",
+        "es": "First Certificate in English – B2"
+      },
+      "org": "Cambridge University Press & Assessment",
+      "grade": { "en": "Grade C", "ca": "Grade C", "es": "Grade C" },
+      "logos": "cambridge",
+      "scores": [
+        { "label": "Overall Score", "value": "172", "total": true },
+        { "label": "Reading", "value": "170" },
+        { "label": "Use of English", "value": "173" },
+        { "label": "Writing", "value": "166" },
+        { "label": "Listening", "value": "176" },
+        { "label": "Speaking", "value": "173" }
+      ],
+      "exam": { "date": "31 MAY 2025", "place": "GRANOLLERS", "centre": "ES467 0045" },
+      "verification": "D1784585",
+      "accreditation": "500/2705/0"
+    },
+    {
+      "name": {
+        "en": "Catalan – Superior Level (C2)",
+        "ca": "Català – Nivell superior (C2)",
+        "es": "Catalán – Nivel superior (C2)"
+      },
+      "org": "Comissió Interuniversitària de Formació i Acreditació Lingüístiques de Catalunya (CIFALC)",
+      "grade": {
+        "en": "Overall 92/100",
+        "ca": "Puntuació global 92/100",
+        "es": "Puntuación global 92/100"
+      },
+      "logos": "placeholder",
+      "scores": [
+        { "label": "Total Score", "value": "92/100", "total": true },
+        { "label": "Comprensió escrita i expressió escrita", "value": "29/30" },
+        { "label": "Comprensió oral i expressió escrita", "value": "18/20" },
+        { "label": "Coneixements gramaticals i lèxics", "value": "21/25" },
+        { "label": "Comprensió escrita i comprensió oral", "value": "24/25" }
+      ],
+      "exam": { "date": "25 May 2026", "place": "UAB Idiomes" }
+    }
+  ],
+  "nativeNote": {
+    "label": { "en": "Spanish:", "ca": "Castellà:", "es": "Español:" },
+    "value": { "en": "native (C2)", "ca": "llengua materna (C2)", "es": "lengua materna (C2)" }
+  }
+}

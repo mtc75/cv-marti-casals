@@ -1,0 +1,248 @@
+# =============================================================================
+# Configuración del panel de edición (Sveltia CMS — compatible con Decap CMS)
+#
+# 1) Cambia OWNER/REPO por tu usuario y repositorio de GitHub.
+# 2) Si tu rama principal no es "main", ajústala en branch.
+# Nada más que tocar: los formularios ya están definidos abajo.
+# =============================================================================
+
+backend:
+  name: github
+  repo: mtc75/cv-marti-casals
+  branch: main
+
+# Permite probar el editor en local con el proxy de Sveltia/Decap
+local_backend: true
+
+# Carpeta de medios (sin uso por ahora; útil si más adelante añadís imágenes)
+media_folder: "assets"
+public_folder: "/assets"
+
+# Idioma de la interfaz del panel
+locale: es
+
+collections:
+  - name: cv
+    label: "Currículum"
+    label_singular: "sección"
+    editor:
+      preview: false
+    files:
+      # ---------------------------------------------------------------- PERFIL
+      - name: perfil
+        label: "Perfil y cabecera"
+        file: "content/perfil.json"
+        fields:
+          - { name: name, label: "Nombre completo", widget: string }
+          - { name: phone, label: "Teléfono", widget: string }
+          - { name: email, label: "Email", widget: string }
+          - { name: location, label: "Ubicación", widget: string }
+          - { name: linkedinLabel, label: "LinkedIn (texto visible)", widget: string }
+          - { name: linkedinUrl, label: "LinkedIn (enlace)", widget: string }
+          - name: headline
+            label: "Titular profesional"
+            widget: object
+            collapsed: true
+            fields: &triS
+              - { name: en, label: "EN · English", widget: string, required: false }
+              - { name: ca, label: "CA · Català", widget: string, required: false }
+              - { name: es, label: "ES · Español", widget: string, required: false }
+          - name: strategicEdge
+            label: "Resumen / presentación"
+            widget: object
+            collapsed: true
+            fields: &triT
+              - { name: en, label: "EN · English", widget: text, required: false }
+              - { name: ca, label: "CA · Català", widget: text, required: false }
+              - { name: es, label: "ES · Español", widget: text, required: false }
+          - name: footer
+            label: "Lema del pie de página"
+            widget: object
+            collapsed: true
+            fields: *triS
+
+      # ---------------------------------------------------------- COMPETENCIAS
+      - name: competencias
+        label: "Competencias clave"
+        file: "content/competencias.json"
+        fields:
+          - name: items
+            label: "Competencias"
+            label_singular: "competencia"
+            widget: list
+            summary: "{{fields.es}}"
+            fields: *triS
+
+      # ----------------------------------------------------------- EXPERIENCIA
+      - name: experiencia
+        label: "Experiencia"
+        file: "content/experiencia.json"
+        fields:
+          - name: items
+            label: "Puestos"
+            label_singular: "puesto"
+            widget: list
+            summary: "{{fields.title.es}}"
+            fields:
+              - { name: title, label: "Cargo", widget: object, collapsed: true, fields: *triS }
+              - { name: company, label: "Entidad", widget: object, collapsed: true, fields: *triS }
+              - { name: date, label: "Fechas", widget: object, collapsed: true, fields: *triS }
+              - name: bullets
+                label: "Logros / tareas"
+                label_singular: "punto"
+                widget: list
+                fields: *triT
+
+      # ------------------------------------------------------------- EDUCACIÓN
+      - name: educacion
+        label: "Educación"
+        file: "content/educacion.json"
+        fields:
+          - name: items
+            label: "Estudios"
+            label_singular: "estudio"
+            widget: list
+            summary: "{{fields.degree.es}}"
+            fields:
+              - name: category
+                label: "Tipo (define el color de la etiqueta y la agrupación)"
+                widget: select
+                default: university
+                options:
+                  - { label: "Universidad", value: university }
+                  - { label: "Máster / Doctorado", value: master }
+                  - { label: "Obligatoria (Primaria / ESO)", value: compulsory }
+                  - { label: "Postobligatoria (Bachillerato)", value: postcompulsory }
+              - { name: tag, label: "Etiqueta", widget: object, collapsed: true, fields: *triS }
+              - { name: degree, label: "Título", widget: object, collapsed: true, fields: *triS }
+              - { name: date, label: "Fechas", widget: object, collapsed: true, fields: *triS }
+              - name: schools
+                label: "Centro(s)"
+                label_singular: "centro"
+                widget: list
+                fields: *triS
+
+      # ---------------------------------------------------------- CERTIFICADOS
+      - name: certificados
+        label: "Certificaciones"
+        file: "content/certificados.json"
+        fields:
+          - name: items
+            label: "Certificaciones"
+            label_singular: "certificación"
+            widget: list
+            summary: "{{fields.name.es}}"
+            fields:
+              - { name: name, label: "Nombre", widget: object, collapsed: true, fields: *triS }
+              - { name: org, label: "Organismo", widget: object, collapsed: true, fields: *triS }
+              - name: dates
+                label: "Fechas (opcional)"
+                label_singular: "fecha"
+                widget: list
+                required: false
+                fields:
+                  - { name: label, label: "Etiqueta", widget: object, collapsed: true, fields: *triS }
+                  - { name: value, label: "Valor (ej. 12/08/2025)", widget: string }
+              - name: badge
+                label: "Distintivo de estado (opcional)"
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - name: status
+                    label: "Estado"
+                    widget: select
+                    required: false
+                    options:
+                      - { label: "— ninguno —", value: "" }
+                      - { label: "Vigente (verde)", value: healthy }
+                      - { label: "Crítico (rojo)", value: critical }
+                      - { label: "Caducado (gris)", value: expired }
+                  - { name: text, label: "Texto del distintivo", widget: object, collapsed: true, fields: *triS }
+              - name: note
+                label: "Enlace / nota (opcional)"
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - { name: linkLabel, label: "Texto del enlace", widget: string, required: false }
+                  - { name: linkUrl, label: "URL", widget: string, required: false }
+
+      # --------------------------------------------------------------- IDIOMAS
+      - name: idiomas
+        label: "Certificaciones lingüísticas"
+        file: "content/idiomas.json"
+        fields:
+          - name: items
+            label: "Certificados de idioma"
+            label_singular: "certificado"
+            widget: list
+            summary: "{{fields.name.es}}"
+            fields:
+              - { name: name, label: "Nombre del certificado", widget: object, collapsed: true, fields: *triS }
+              - { name: org, label: "Organismo emisor", widget: string }
+              - { name: grade, label: "Calificación / nota global", widget: object, collapsed: true, fields: *triS }
+              - name: logos
+                label: "Logotipos"
+                widget: select
+                default: "none"
+                options:
+                  - { label: "Cambridge (CCEA · OFQUAL · QualWhales)", value: cambridge }
+                  - { label: "Marcadores de color (placeholder)", value: placeholder }
+                  - { label: "Sin logotipos", value: "none" }
+              - name: scores
+                label: "Puntuaciones"
+                label_singular: "fila"
+                widget: list
+                required: false
+                fields:
+                  - { name: label, label: "Apartado", widget: string }
+                  - { name: value, label: "Puntuación", widget: string }
+                  - { name: total, label: "¿Es la nota total? (se muestra destacada)", widget: boolean, default: false, required: false }
+              - name: exam
+                label: "Datos del examen"
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - { name: date, label: "Fecha", widget: string, required: false }
+                  - { name: place, label: "Lugar", widget: string, required: false }
+                  - { name: centre, label: "Centro (opcional)", widget: string, required: false }
+              - { name: verification, label: "Nº de verificación (opcional, copiable)", widget: string, required: false }
+              - { name: accreditation, label: "Nº de acreditación (opcional, copiable)", widget: string, required: false }
+          - name: nativeNote
+            label: "Lengua materna"
+            widget: object
+            collapsed: true
+            fields:
+              - { name: label, label: "Idioma (en negrita)", widget: object, collapsed: true, fields: *triS }
+              - { name: value, label: "Detalle (ej. native (C2))", widget: object, collapsed: true, fields: *triS }
+
+      # ------------------------------------------------------------- LICENCIAS
+      - name: licencias
+        label: "Licencias y permisos (carrusel)"
+        file: "content/licencias.json"
+        fields:
+          - name: items
+            label: "Tarjetas"
+            label_singular: "tarjeta"
+            widget: list
+            summary: "{{fields.title.es}}"
+            fields:
+              - { name: icon, label: "Icono Font Awesome (ej. fa-car)", widget: string, required: false }
+              - { name: title, label: "Título", widget: object, collapsed: true, required: false, fields: *triS }
+              - { name: detail, label: "Detalle (ej. caducidad / nº)", widget: object, collapsed: true, fields: *triS }
+              - { name: extra, label: "Descripción (ventana de detalle)", widget: object, collapsed: true, fields: *triT }
+              - { name: color, label: "Fondo (CSS background)", widget: string }
+              - { name: textColor, label: "Color del texto (opcional)", widget: string, required: false }
+              - { name: showIcon, label: "Mostrar icono", widget: boolean, default: true, required: false }
+              - name: advanced
+                label: "Avanzado (HTML — solo si sabes lo que haces)"
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - { name: customTitleHTML, label: "HTML del título personalizado", widget: text, required: false }
+                  - { name: decorativeHTML, label: "HTML decorativo", widget: text, required: false }
+                  - { name: textAlign, label: "Alineación del texto", widget: string, required: false }
+                  - { name: padding, label: "Padding CSS", widget: string, required: false }

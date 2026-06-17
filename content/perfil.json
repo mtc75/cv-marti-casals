@@ -1,0 +1,23 @@
+{
+  "name": "Martí Casals Caro",
+  "phone": "+34 123 45 67 89",
+  "email": "042857x@gmail.com",
+  "location": "Llinars del Vallès, 08450",
+  "linkedinLabel": "linkedin.com/in/marticasals",
+  "linkedinUrl": "https://www.linkedin.com/in/marticasals",
+  "headline": {
+    "en": "Civil Protection & Emergency Technician (in progress)",
+    "ca": "Tècnic de Protecció Civil i Emergències (en curs)",
+    "es": "Técnico de Protección Civil y Emergencias (en curso)"
+  },
+  "strategicEdge": {
+    "en": "Aspiring civil protection and emergency technician with a solid foundation in forest engineering, multilingual communication, and hands‑on experience as a sports referee in high‑pressure environments.",
+    "ca": "Futur tècnic de protecció civil i emergències amb una base sòlida en enginyeria forestal, comunicació multilingüe i experiència directa com a àrbitre d’esports en entorns d’alta pressió.",
+    "es": "Futuro técnico de protección civil y emergencias con una base sólida en ingeniería forestal, comunicación multilingüe y experiencia directa como árbitro deportivo en entornos de alta presión."
+  },
+  "footer": {
+    "en": "Ecosystem resilience engineering · Protect · Enhance · Restore",
+    "ca": "Enginyeria de la resiliència d’ecosistemes · Protegir · Millorar · Restaurar",
+    "es": "Ingeniería de la resiliencia de ecosistemas · Proteger · Mejorar · Restaurar"
+  }
+}
